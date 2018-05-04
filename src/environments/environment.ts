@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  config: {
+    tenant: 'careportfol.io',
+    clientId: '14c39115-7cae-4c02-b865-20d7b2d205f8'
+  }
 };
 
 /*
