@@ -25,7 +25,7 @@ export class ToolbarComponent implements OnInit {
     this.adalService.logOut();
   }
 
-  get authenticated() {
+  get authenticated(): boolean {
     return this.adalService.userInfo.authenticated;
   }
 }
