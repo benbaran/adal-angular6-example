@@ -1,5 +1,13 @@
 <mat-card style="width: 650px; overflow: elipses; margin: 0 auto; margin-top: 30px;">
   <pre>
-  {{user | json}}
-</pre>
+    {{user | json}}
+  </pre>
+</mat-card>
+<p>
+  <button name="Profile" (click)="profileClicked()">Get My Profile</button>
+</p>
+<mat-card *ngIf="profile" style="width: 650px; overflow: elipses; margin: 0 auto; margin-top: 30px;">
+  <pre>
+    {{profile | json}}
+  </pre>
 </mat-card>
