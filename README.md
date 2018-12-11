@@ -2,21 +2,24 @@
 
 Example project using adal-angular4 for authentication to Azure Active Directory tenent.
 
-## Steps used to create this Example
+## Change Log
+12-11-2018: Updated to Angular 7, Improver README
 
-1. Install the Latest Version of Angular CLI
+## Steps Used to Create this Example
+
+1. Install the Latest Version of Angular CLI:
 
 ```
 npm install -g @angular/cli@latest
 ```
 
-2. Create the Project
+2. Create the Project:
 
 ```
 ng new adal-angular6-example --routing
 ```
 
-3. Add Angular Material
+3. Add Angular Material:
 
 ```
 cd adal-angular6-example
@@ -24,13 +27,13 @@ cd adal-angular6-example
 ng add @angular/material
 ```
 
-4. Add Material Module to Export Material Components
+4. Add Material Module to Export Material Components:
 
 ```
 ng g module Material
 ```
 
-5. Add Components to MaterialModule
+5. Add Components to MaterialModule:
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -66,7 +69,7 @@ import {MaterialModule} from './material/material.module';
   ],
 ```
 
-6. Create Navigation Components
+6. Create Navigation Components:
 
 ```
 ng g component Home
@@ -76,7 +79,7 @@ ng g component NotFound
 ng g component Toolbar
 ```
 
-7. Set Up Routing in app-routing.module.ts
+7. Set Up Routing in app-routing.module.ts:
 
 ```typescript
 ...
@@ -94,7 +97,7 @@ const routes: Routes = [
 ...
 ```
 
-8. Install adal-angular4
+8. Install adal-angular4:
 
 ```
 npm install --save adal-angular4
@@ -209,3 +212,12 @@ export class ToolbarComponent implements OnInit {
   }
 }
 ```
+
+14. Add ToolbarComponent to app.component.html:
+
+```html
+<app-toolbar></app-toolbar>
+<router-outlet></router-outlet>
+```
+
+15. Done!
