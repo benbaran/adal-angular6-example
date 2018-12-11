@@ -28,7 +28,10 @@ import { AdalService, AdalGuard, AdalInterceptor } from 'adal-angular4';
     MaterialModule,
     HttpClientModule
   ],
-  providers: [AdalService, AdalGuard, { provide: HTTP_INTERCEPTORS, useClass: AdalInterceptor, multi: true }],
+  providers: [
+    AdalService,
+    AdalGuard,
+    { provide: HTTP_INTERCEPTORS, useClass: AdalInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

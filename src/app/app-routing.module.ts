@@ -8,7 +8,6 @@ import { AdalGuard } from 'adal-angular4';
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AdalGuard] },
   { path: '**', component: NotFoundComponent }
-
 ];
 
 @NgModule({
