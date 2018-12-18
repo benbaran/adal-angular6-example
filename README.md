@@ -3,6 +3,7 @@
 Example project using adal-angular4 for authentication to Azure Active Directory tenent.
 
 ## Change Log
+12-18-2018: Updated all components, Tested to Work with adal-angular4 major version 4
 12-11-2018: Updated to Angular 7, Improved README
 
 ## Steps Used to Create this Example
